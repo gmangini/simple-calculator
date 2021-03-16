@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+	<title>Calculator</title>
+	<style>
+		table {
+			position: relative;
+			margin: auto;
+			background-color: rgb(179, 174, 174);
+			width: 395px;
+			height: 495px;
+			text-align: center;
+			border: 2px solid black;
+			border-radius: 14px;
+			padding: 10px;
+			margin-top: 30px;
+		}
+		.num, .op, .btn {
+			position: relative;
+			background-color: rgb(240, 235, 235);
+			border: solid;
+			border-radius: 5px;
+			text-align: center;
+			font-size: x-large;
+			border: 2px solid black;
+			margin: 3px;
+			width: 80px;
+			height: 65px;
+		}
+		.num:hover, .op:hover, .btn:hover {
+			width: 75px;
+			box-shadow: 0 4px rgba(0,0,0,0.2);
+    		background-color: lightgrey;
+			transition-duration: 0.4s;
+		}
+		#answer {
+			position: relative;
+			border: solid 2px black;
+			border-radius: 10px;
+			background-color: rgb(240, 236, 236);
+			height: 75px;
+			margin: 10px;
+			text-align: right;
+			font-size: large;
+			font-weight: bold;
+			width: fit-content;
+		}
+		#clear {
+			position: relative;
+			background-color: rgb(245, 181, 181);
+			font-size: x-large;
+			font-weight: lighter;
+			width: 170px;
+		}
+		#backspace {
+			position: relative;
+			background-color: rgb(164, 165, 231);
+			font-size: x-large;
+			font-weight: lighter;
+			width: 170px;
+		}
+	</style>
+	</head>
+
+	<body>
+		<table id="calculator">
+			<tr>
+				<td colspan="4"><input type="text" name="input" size="30" id="answer"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" class="btn" id="clear" value="CLEAR"></td>
+				<td colspan="2"><input type="button" class="btn" id="backspace" value="DELETE"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="num" value="7"></td>
+				<td><input type="button" class="num" value="8"></td>
+				<td><input type="button" class="num" value="9"></td>
+				<td><input type="button" class="op" name="add" value="+"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="num" value="4"></td>
+				<td><input type="button" class="num" value="5"></td>
+				<td><input type="button" class="num" value="6"></td>
+				<td><input type="button" class="op" name="multiply" value="×"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="num" value="1"></td>
+				<td><input type="button" class="num" value="2"></td>
+				<td><input type="button" class="num" value="3"></td>
+				<td><input type="button" class="op" name="subtract" value="-"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="num" value="0"></td>
+				<td><input type="button" class="btn" id="deci" value="."></td>
+				<td><input type="button" class="btn" id="equal" value="="></td>
+				<td><input type="button" class="op" name="divide" value="÷"></td>
+			</tr>
+		</table>
+	</body>
+
+	<script src="script.js"></script>
+</html>
